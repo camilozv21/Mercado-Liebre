@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Roboto:wght@300&display=swap');
 
-body {
+* {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     border: solid 5px #666;
 }
@@ -16,8 +20,7 @@ nav {
 }
 
 main {
-    /* background-color: #ebebeb; */
-    width: 90vw;
+    width: 100vw;
     margin: 0 auto;
 }
 
@@ -65,29 +68,26 @@ ul a{
     height: 40px;
     border-radius: 50%;
 }
+/* Configuración flex del cuerpo de la página */
 
-.contenedor-articulo {
-    display: block;
+.contenedor-descripcion {
     text-align: left;
-    padding: 15px;
     border-top: solid 1px #666;
     background-color: white;
     display: none;
 }
 
-.borde {
-    border-top: solid 1px #666;
-}
-
-article {
-    text-align: center;   
+.contenedor-producto {
     padding-bottom: 10px;
     margin: 10px;
+    border-bottom: solid 1px #666;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
-article img {
+.imagen-producto {
     width: 100%;
 }
+/* Hasta acá */
 
 footer i {
     font-size: 2em;
@@ -153,29 +153,8 @@ footer i {
 }
 /* Hasta acá */
 
-/* main article div .contenedor-articulo{
-    display: flex;
-    flex-direction: column;
-} */
-
 .imagen-header {
     width: 100%;
-}
-
-main section article {
-    display: inline-block;
-}
-
-main section {
-    text-align: center;
-}
-
-.contenedor-producto {
-    margin: auto;
-    flex-direction: row;
-    max-width: 230px;
-    justify-content: center;
-    align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -201,20 +180,22 @@ main section {
     .main-navbar li {
         margin: 0 5px;
     }
-    main article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .contenedor-articulo {
+    .contenedor-section {
         display: flex;
-        flex-direction: column;
-    }
-    /* main article div .contenedor-articulo{
         flex-direction: row;
-        max-width: 220px;
+        align-items: center;
+        justify-content: space-around;
     }
-    article img {
-        max-width: 220px;
-    } */
+    .contenedor-descripcion {
+        display: block;
+        width: 100%;
+    }
+    .contenedor-producto {
+        display: block;
+        max-width: 300px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        border: none;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -243,13 +224,8 @@ main section {
         font-size: 22px;
         font-weight: 400;
     }
-}
-
-
-/* @media (min-width: 460px) {
-    .contenedor-articulo {
-        display: flex;
-        flex-direction: column;
+    .contenedor-section {
+        flex-direction: row;
+        align-items: center;
     }
-    
-} */
+}
