@@ -20,7 +20,7 @@ nav {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     background-color: #ebebeb;
 }
@@ -92,17 +92,48 @@ ul a{
     background-color: white;
     display: none;
     position: relative;
+    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
 }
 
 .contenedor-producto {
-    padding-bottom: 10px;
-    margin: 10px;
-    border-bottom: solid 1px #666;
+    background-color: white;
+    padding: 0px;
+    margin: 15px auto;
+    /* border-bottom: solid 1px #666; */
+    position: relative;
+    max-width: 450px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+
+.contenedor-producto:hover {
+    box-shadow: 0 3px 3px 0 #0000008e,0 3px 3px 0 #0000008e;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform: translate(0px,5px);
 }
 
 .imagen-producto {
     width: 100%;
+    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+}
+
+.contenedor-producto h4 {
+    background-color: rgba(0,0,0,0.5);
+    color: #ebebeb;
+    margin: 0 auto;
+    padding: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.contenedor-producto:hover h4 {
+    opacity: 1;
 }
 /* Hasta acá */
 
@@ -137,6 +168,7 @@ footer i {
 .copy-header {
     font-weight: 400;
     text-align: center;
+    color: #222222;
 }
 
 .button-bars {
@@ -316,7 +348,7 @@ input[type="checkbox"] {
         width: 100%;
     }   
     .contenedor-producto {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
         border: none;
         width: 40%;
     }
@@ -355,5 +387,24 @@ input[type="checkbox"] {
     }
     .contenedor-producto {
         width: 23%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-descripcion {
+        display: block;
+        border: none;
+    }
+    .contenedor-producto h4 {
+        bottom: 0;
+    }
+    .logo-envio {
+        display: none;
+    }
+    .precios {
+        display: none;
+    }
+    .descuentos {
+        display: none;
     }
 }
