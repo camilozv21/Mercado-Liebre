@@ -5,7 +5,6 @@
 Completamente Flex usando la metodología mobile first
 
 <img src="https://github.com/camilozv21/Mercado-Liebre/blob/main/public/design/home_ml.gif" width="850">
-<img src="https://github.com/camilozv21/Mercado-Liebre/blob/main/public/design/mobile_first_ml.gif" width="850">
 
 ## Página Register 
 
