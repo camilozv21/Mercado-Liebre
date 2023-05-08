@@ -108,14 +108,14 @@ ul a{
     /* border-bottom: solid 1px #666; */
     position: relative;
     max-width: 450px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
     transition: .5s, color .10s;
     -webkit-transition: .5s, color .10s;
     -moz-transition: .5s, color .10s;
 }
 
 .contenedor-producto:hover {
-    box-shadow: 0 3px 3px 0 #0000008e,0 3px 3px 0 #0000008e;
+    /* box-shadow: 0 3px 3px 0 #0000008e,0 3px 3px 0 #0000008e; */
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
     -moz-transform: translate(0px,5px);
@@ -237,66 +237,73 @@ footer i {
     width: 100%;
 }
 
-/* ------------ REGISTER ----------------------------*/
+/* ------------ REGISTER Y LOG IN----------------------------*/
 
-/* Estilos para el contenedor principal */
-.form-register {
+.register {
+    width: 90%;
     max-width: 500px;
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Estilos para las opciones del formulario */
-.contenedor-opcion {
-    margin-bottom: 10px;    
-}
-
-/* Estilos para las etiquetas */
-label form .form-register {
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* Estilos para los campos de entrada de texto */
-input form .form-register{
-    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
-    margin-bottom: 10px;
 }
 
-/* Estilos para los botones */
-input[type="submit"],
-input[type="reset"] {
-    background-color: #007bff;
-    color: #fff;
+.register form {
+    width: 100%;
+    ;
+}
+
+.form-title {
+    text-align: center;
+    color: #666666;
+}
+
+.register .wide-input {
+    width: 100%;
     border: none;
+    outline: none;
+    padding: 7px;
+    margin: 7px 0;
+    border-radius: 7px;
+}
+
+.register label {
+    padding: 2px;
+}
+
+.option-input label {
+    padding-right: 10px;
+}
+
+.register .option-input {
     padding: 5px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    margin: 3px;
+}
+
+#register:target,
+#login:target {
+    border-bottom: solid 2px #000;
+}
+
+.button-div {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.button-input {
+    background-color: #1259c3;
+    border: none;
+    border-radius: 6px;
+    padding: 7px;
     margin: 5px;
+    color: #FFF;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+    max-width: 150px;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    background-color: #0056b3;  
-}
-
-/* Estilos para los radio buttons */
-input[type="radio"] {
-    margin-right: 10px; 
-}
-
-/* Estilos para los checkboxes */
-input[type="checkbox"] {
-    margin-right: 10px; 
+.button-input:hover {
+    background-color: #0022AA;
 }
 
 /* Hasta acá */
