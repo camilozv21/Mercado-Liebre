@@ -115,7 +115,7 @@ ul a{
 }
 
 .contenedor-producto:hover {
-    /* box-shadow: 0 3px 3px 0 #0000008e,0 3px 3px 0 #0000008e; */
+    box-shadow: 0 3px 3px 0 #0000008e,0 3px 3px 0 #0000008e;
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
     -moz-transform: translate(0px,5px);
